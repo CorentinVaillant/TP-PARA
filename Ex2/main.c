@@ -24,14 +24,17 @@ int addSequential(const int *m, unsigned int size, float *time) {
   return result;
 }
 
+///@returns renvoie le temps pris par le calcule
 int addParaSimplePartialSum(const int *m, unsigned int size, unsigned int nbT,
                             float *time) {
   double start, stop;
   int result = 0;
 
+  // Tableau des sommes partielles aloué dans la heap.
   int *partial_sums = calloc(sizeof(int), nbT);
   start = omp_get_wtime();
 
+  // sur nbT threads
 #pragma omp parallel num_threads(nbT)
   {
     unsigned int thread_nb = omp_get_thread_num();
@@ -39,6 +42,7 @@ int addParaSimplePartialSum(const int *m, unsigned int size, unsigned int nbT,
     for (unsigned int i = 0; i < size * size; i++)
       partial_sums[thread_nb] += m[i];
 
+    // réduction des sommes partielles
 #pragma omp single
     for (unsigned int i = 0; i < nbT; i++)
       result += partial_sums[i];
@@ -51,6 +55,7 @@ int addParaSimplePartialSum(const int *m, unsigned int size, unsigned int nbT,
   return result;
 }
 
+///@returns renvoie le temps pris par le calcule
 int addParaAtomicPartialSum(const int *m, unsigned int size, unsigned int nbT,
                             float *time) {
   double start, stop;
@@ -65,6 +70,7 @@ int addParaAtomicPartialSum(const int *m, unsigned int size, unsigned int nbT,
     for (unsigned int i = 0; i < size * size; i++)
       partial_sum += m[i];
 
+    // réduction des sommes partielles
 #pragma omp atomic
     result += partial_sum;
   }
@@ -74,6 +80,7 @@ int addParaAtomicPartialSum(const int *m, unsigned int size, unsigned int nbT,
   return result;
 }
 
+///@returns renvoie le temps pris par le calcule
 int addParaOptimizedPartialSum(const int *m, unsigned int size,
                                unsigned int nbT, float *time) {
   double start, stop;
@@ -81,6 +88,7 @@ int addParaOptimizedPartialSum(const int *m, unsigned int size,
 
   start = omp_get_wtime();
 
+  // réduction du résultat en somme sur result.
 #pragma omp parallel num_threads(nbT) reduction(+ : result)
   {
 #pragma omp for

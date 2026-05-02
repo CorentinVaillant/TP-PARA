@@ -1,0 +1,20 @@
+EXEC_NAME = "out.exe"
+
+METHOD_SEQUENTIAL = 0
+METHOD_SIMPLEREDUC = 1
+METHOD_ATOMICREDUC = 2
+METHOD_OPTIREDUC = 3
+
+METHODS = [METHOD_SEQUENTIAL, METHOD_SIMPLEREDUC, METHOD_ATOMICREDUC, METHOD_OPTIREDUC]
+METHODS_NAMES = ["Séquentiel", "Somme partielle simple", "Réduction atomique", "Réduction optimisé"]
+
+TEST_SIZE = [1_000 * k for k in range(1,31)]
+
+NB_THREAD_MAX = 8
+
+TO_TEST = {
+    METHOD_SEQUENTIAL: [1],
+    METHOD_SIMPLEREDUC: list(range(2, NB_THREAD_MAX + 1)),
+    METHOD_ATOMICREDUC: list(range(2, NB_THREAD_MAX + 1)),
+    METHOD_OPTIREDUC: list(range(2, NB_THREAD_MAX + 1)),
+}
