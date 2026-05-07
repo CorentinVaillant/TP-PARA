@@ -5,14 +5,16 @@
 #include <string.h>
 #include <sys/time.h>
 
-void verifyResult(int result, unsigned int size) {
+void verifyResult(int result, unsigned int size)
+{
 
   if (result != size * size)
     printf("\n[ERR ] got : %d instead of %d\n", result, size * size);
   assert(result == size * size && "Result should be size²");
 }
 ///@returns renvoie le temps pris par le calcule
-int addSequential(const int *m, unsigned int size, float *time) {
+int addSequential(const int *m, unsigned int size, float *time)
+{
   double start, stop;
   int result = 0;
 
@@ -26,7 +28,8 @@ int addSequential(const int *m, unsigned int size, float *time) {
 
 ///@returns renvoie le temps pris par le calcule
 int addParaSimplePartialSum(const int *m, unsigned int size, unsigned int nbT,
-                            float *time) {
+                            float *time)
+{
   double start, stop;
   int result = 0;
 
@@ -57,7 +60,8 @@ int addParaSimplePartialSum(const int *m, unsigned int size, unsigned int nbT,
 
 ///@returns renvoie le temps pris par le calcule
 int addParaAtomicPartialSum(const int *m, unsigned int size, unsigned int nbT,
-                            float *time) {
+                            float *time)
+{
   double start, stop;
   int result = 0;
 
@@ -66,7 +70,7 @@ int addParaAtomicPartialSum(const int *m, unsigned int size, unsigned int nbT,
 #pragma omp parallel num_threads(nbT)
   {
     int partial_sum = 0;
-#pragma omp for
+#pragma omp for nowait // nowait pour retiré la barrière à la fin.
     for (unsigned int i = 0; i < size * size; i++)
       partial_sum += m[i];
 
@@ -82,7 +86,8 @@ int addParaAtomicPartialSum(const int *m, unsigned int size, unsigned int nbT,
 
 ///@returns renvoie le temps pris par le calcule
 int addParaOptimizedPartialSum(const int *m, unsigned int size,
-                               unsigned int nbT, float *time) {
+                               unsigned int nbT, float *time)
+{
   double start, stop;
   int result = 0;
 
@@ -100,17 +105,20 @@ int addParaOptimizedPartialSum(const int *m, unsigned int size,
   return result;
 }
 
-enum Methods {
+enum Methods
+{
   METHOD_SEQUENTIAL = 0,
   METHOD_SIMPLEREDUC = 1,
   METHOD_ATOMICREDUC = 2,
   METHOD_OPTIREDUC = 3,
 };
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
 
   // -- Parse arguments
-  if (argc == 1 || !strncmp("-h\0", argv[1], 3) || argc != 4) {
+  if (argc == 1 || !strncmp("-h\0", argv[1], 3) || argc != 4)
+  {
     printf("Usages : \n"
            "$%s -h # give you usage\n"
            "$%s <Method> <NbT> <SIZE> \n "
@@ -136,13 +144,15 @@ int main(int argc, char **argv) {
   m = malloc(sizeof(int) * size * size);
 
   // Init tout à 1
-  for (unsigned int i = 0; i < size * size; i++) {
+  for (unsigned int i = 0; i < size * size; i++)
+  {
     m[i] = 1;
   }
 
   printf("{\n");
   printf("\t\"method\": %u,\n\t", method);
-  switch (method) {
+  switch (method)
+  {
   case METHOD_SEQUENTIAL:
     printf("\"name\": \"Sequential\",\n");
     result = addSequential(m, size, &time);

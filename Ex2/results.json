@@ -4,181 +4,181 @@
       "name": "Sequential",
       "nbT": 1,
       "size": 1000,
-      "time": 0.000908
+      "time": 0.000953
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 2000,
-      "time": 0.003934
+      "time": 0.006422
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 3000,
-      "time": 0.00835
+      "time": 0.019775
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 4000,
-      "time": 0.014996
+      "time": 0.032142
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 5000,
-      "time": 0.023598
+      "time": 0.047815
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 6000,
-      "time": 0.034605
+      "time": 0.069291
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 7000,
-      "time": 0.046799
+      "time": 0.094035
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 8000,
-      "time": 0.061207
+      "time": 0.122574
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 9000,
-      "time": 0.077986
+      "time": 0.155091
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 10000,
-      "time": 0.096116
+      "time": 0.190986
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 11000,
-      "time": 0.116528
+      "time": 0.233341
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 12000,
-      "time": 0.13757
+      "time": 0.275898
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 13000,
-      "time": 0.163329
+      "time": 0.320463
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 14000,
-      "time": 0.190087
+      "time": 0.374906
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 15000,
-      "time": 0.21587
+      "time": 0.430587
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 16000,
-      "time": 0.246969
+      "time": 0.489504
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 17000,
-      "time": 0.27868
+      "time": 0.553907
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 18000,
-      "time": 0.313361
+      "time": 0.621578
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 19000,
-      "time": 0.349204
+      "time": 0.689835
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 20000,
-      "time": 0.399661
+      "time": 0.764072
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 21000,
-      "time": 0.431401
+      "time": 0.843992
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 22000,
-      "time": 0.464209
+      "time": 0.925182
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 23000,
-      "time": 0.506854
+      "time": 1.010985
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 24000,
-      "time": 0.550695
+      "time": 1.103463
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 25000,
-      "time": 0.596803
+      "time": 1.195393
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 26000,
-      "time": 0.64713
+      "time": 1.290583
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 27000,
-      "time": 0.696529
+      "time": 1.399554
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 28000,
-      "time": 0.751428
+      "time": 1.499784
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 29000,
-      "time": 0.827954
+      "time": 1.605291
     },
     {
       "name": "Sequential",
       "nbT": 1,
       "size": 30000,
-      "time": 0.860175
+      "time": 1.720421
     }
   ],
   "1": [
@@ -186,1261 +186,1261 @@
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 1000,
-      "time": 0.009118
+      "time": 0.002099
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 1000,
-      "time": 0.009588
+      "time": 0.002192
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 1000,
-      "time": 0.010925
+      "time": 0.002052
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 1000,
-      "time": 0.009777
+      "time": 0.00272
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 1000,
-      "time": 0.010718
+      "time": 0.003023
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 1000,
-      "time": 0.010369
+      "time": 0.003027
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 1000,
-      "time": 0.010793
+      "time": 0.002146
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 2000,
-      "time": 0.03634
+      "time": 0.006539
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 2000,
-      "time": 0.037123
+      "time": 0.006957
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 2000,
-      "time": 0.039997
+      "time": 0.009056
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 2000,
-      "time": 0.038791
+      "time": 0.008539
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 2000,
-      "time": 0.040592
+      "time": 0.007531
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 2000,
-      "time": 0.040805
+      "time": 0.01419
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 2000,
-      "time": 0.0417
+      "time": 0.007785
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 3000,
-      "time": 0.079671
+      "time": 0.013542
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 3000,
-      "time": 0.079701
+      "time": 0.013827
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 3000,
-      "time": 0.085058
+      "time": 0.015933
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 3000,
-      "time": 0.088683
+      "time": 0.015761
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 3000,
-      "time": 0.089528
+      "time": 0.021584
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 3000,
-      "time": 0.091948
+      "time": 0.019063
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 3000,
-      "time": 0.094592
+      "time": 0.031192
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 4000,
-      "time": 0.140933
+      "time": 0.023434
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 4000,
-      "time": 0.152927
+      "time": 0.024454
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 4000,
-      "time": 0.150597
+      "time": 0.026098
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 4000,
-      "time": 0.157028
+      "time": 0.024304
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 4000,
-      "time": 0.158387
+      "time": 0.031319
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 4000,
-      "time": 0.162445
+      "time": 0.029077
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 4000,
-      "time": 0.167258
+      "time": 0.025864
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 5000,
-      "time": 0.210419
+      "time": 0.033644
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 5000,
-      "time": 0.223782
+      "time": 0.037255
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 5000,
-      "time": 0.233625
+      "time": 0.036845
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 5000,
-      "time": 0.243692
+      "time": 0.043517
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 5000,
-      "time": 0.248714
+      "time": 0.043384
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 5000,
-      "time": 0.253561
+      "time": 0.045391
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 5000,
-      "time": 0.260808
+      "time": 0.037961
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 6000,
-      "time": 0.308658
+      "time": 0.051087
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 6000,
-      "time": 0.323509
+      "time": 0.054762
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 6000,
-      "time": 0.334308
+      "time": 0.047906
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 6000,
-      "time": 0.353195
+      "time": 0.053838
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 6000,
-      "time": 0.358694
+      "time": 0.055095
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 6000,
-      "time": 0.36443
+      "time": 0.055021
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 6000,
-      "time": 0.374407
+      "time": 0.051372
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 7000,
-      "time": 0.42083
+      "time": 0.0723
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 7000,
-      "time": 0.438524
+      "time": 0.074575
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 7000,
-      "time": 0.454968
+      "time": 0.077628
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 7000,
-      "time": 0.477799
+      "time": 0.075798
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 7000,
-      "time": 0.486664
+      "time": 0.07049
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 7000,
-      "time": 0.496891
+      "time": 0.068602
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 7000,
-      "time": 0.510122
+      "time": 0.079095
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 8000,
-      "time": 0.550445
+      "time": 0.070283
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 8000,
-      "time": 0.56994
+      "time": 0.09993
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 8000,
-      "time": 0.602777
+      "time": 0.100458
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 8000,
-      "time": 0.623887
+      "time": 0.100231
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 8000,
-      "time": 0.636953
+      "time": 0.102874
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 8000,
-      "time": 0.644931
+      "time": 0.101448
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 8000,
-      "time": 0.666443
+      "time": 0.081349
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 9000,
-      "time": 0.696546
+      "time": 0.090386
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 9000,
-      "time": 0.72306
+      "time": 0.124123
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 9000,
-      "time": 0.760178
+      "time": 0.126625
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 9000,
-      "time": 0.791989
+      "time": 0.104178
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 9000,
-      "time": 0.807439
+      "time": 0.102406
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 9000,
-      "time": 0.819514
+      "time": 0.114241
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 9000,
-      "time": 0.868026
+      "time": 0.13201
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 10000,
-      "time": 0.856449
+      "time": 0.114352
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 10000,
-      "time": 0.885147
+      "time": 0.137283
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 10000,
-      "time": 0.956208
+      "time": 0.134953
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 10000,
-      "time": 1.030288
+      "time": 0.144161
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 10000,
-      "time": 1.01486
+      "time": 0.133211
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 10000,
-      "time": 1.018079
+      "time": 0.160859
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 10000,
-      "time": 1.043402
+      "time": 0.138135
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 11000,
-      "time": 1.111354
+      "time": 0.130149
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 11000,
-      "time": 1.118856
+      "time": 0.181732
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 11000,
-      "time": 1.188645
+      "time": 0.186518
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 11000,
-      "time": 1.192092
+      "time": 0.181736
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 11000,
-      "time": 1.218959
+      "time": 0.191589
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 11000,
-      "time": 1.250405
+      "time": 0.193576
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 11000,
-      "time": 1.268194
+      "time": 0.198885
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 12000,
-      "time": 1.224867
+      "time": 0.213741
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 12000,
-      "time": 1.387231
+      "time": 0.182646
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 12000,
-      "time": 1.357587
+      "time": 0.220376
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 12000,
-      "time": 1.410981
+      "time": 0.196791
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 12000,
-      "time": 1.439024
+      "time": 0.234636
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 12000,
-      "time": 1.470352
+      "time": 0.20792
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 12000,
-      "time": 1.502234
+      "time": 0.197603
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 13000,
-      "time": 1.439656
+      "time": 0.223022
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 13000,
-      "time": 1.540769
+      "time": 0.20641
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 13000,
-      "time": 1.570932
+      "time": 0.202991
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 13000,
-      "time": 1.669143
+      "time": 0.268741
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 13000,
-      "time": 1.68969
+      "time": 0.221258
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 13000,
-      "time": 1.727161
+      "time": 0.257313
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 13000,
-      "time": 1.76826
+      "time": 0.257645
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 14000,
-      "time": 1.655621
+      "time": 0.295745
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 14000,
-      "time": 1.750236
+      "time": 0.247158
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 14000,
-      "time": 2.039028
+      "time": 0.265787
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 14000,
-      "time": 1.923829
+      "time": 0.281357
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 14000,
-      "time": 1.966548
+      "time": 0.308997
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 14000,
-      "time": 2.009305
+      "time": 0.312099
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 14000,
-      "time": 2.048624
+      "time": 0.250219
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 15000,
-      "time": 1.937823
+      "time": 0.342195
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 15000,
-      "time": 1.97346
+      "time": 0.348328
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 15000,
-      "time": 2.0877
+      "time": 0.316861
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 15000,
-      "time": 2.20159
+      "time": 0.334599
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 15000,
-      "time": 2.268326
+      "time": 0.305108
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 15000,
-      "time": 2.297885
+      "time": 0.314199
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 15000,
-      "time": 2.356887
+      "time": 0.317614
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 16000,
-      "time": 2.238093
+      "time": 0.366333
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 16000,
-      "time": 2.316031
+      "time": 0.349582
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 16000,
-      "time": 2.410516
+      "time": 0.389636
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 16000,
-      "time": 2.535716
+      "time": 0.395472
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 16000,
-      "time": 2.569974
+      "time": 0.325965
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 16000,
-      "time": 2.616557
+      "time": 0.401378
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 16000,
-      "time": 2.684537
+      "time": 0.403474
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 17000,
-      "time": 2.519144
+      "time": 0.373084
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 17000,
-      "time": 2.625607
+      "time": 0.3981
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 17000,
-      "time": 2.740324
+      "time": 0.449413
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 17000,
-      "time": 2.882954
+      "time": 0.4103
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 17000,
-      "time": 2.900356
+      "time": 0.45538
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 17000,
-      "time": 2.972686
+      "time": 0.46688
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 17000,
-      "time": 3.031397
+      "time": 0.379907
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 18000,
-      "time": 2.416589
+      "time": 0.474906
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 18000,
-      "time": 2.900662
+      "time": 0.480653
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 18000,
-      "time": 3.021015
+      "time": 0.488228
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 18000,
-      "time": 3.19141
+      "time": 0.495534
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 18000,
-      "time": 3.241632
+      "time": 0.45911
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 18000,
-      "time": 3.306387
+      "time": 0.51387
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 18000,
-      "time": 3.391422
+      "time": 0.532172
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 19000,
-      "time": 3.170933
+      "time": 0.518404
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 19000,
-      "time": 3.286971
+      "time": 0.53854
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 19000,
-      "time": 3.423161
+      "time": 0.545461
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 19000,
-      "time": 3.476207
+      "time": 0.415278
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 19000,
-      "time": 3.629646
+      "time": 0.565874
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 19000,
-      "time": 3.686747
+      "time": 0.564461
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 19000,
-      "time": 3.744413
+      "time": 0.580601
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 20000,
-      "time": 3.444033
+      "time": 0.534997
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 20000,
-      "time": 3.494009
+      "time": 0.559787
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 20000,
-      "time": 3.719661
+      "time": 0.571283
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 20000,
-      "time": 3.916227
+      "time": 0.53517
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 20000,
-      "time": 4.072027
+      "time": 0.596025
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 20000,
-      "time": 4.096532
+      "time": 0.632091
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 20000,
-      "time": 4.200935
+      "time": 0.521986
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 21000,
-      "time": 3.893696
+      "time": 0.677307
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 21000,
-      "time": 4.058906
+      "time": 0.496859
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 21000,
-      "time": 4.20758
+      "time": 0.661746
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 21000,
-      "time": 4.384321
+      "time": 0.554405
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 21000,
-      "time": 4.449176
+      "time": 0.655387
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 21000,
-      "time": 4.524023
+      "time": 0.69484
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 21000,
-      "time": 4.620883
+      "time": 0.572042
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 22000,
-      "time": 4.220705
+      "time": 0.696577
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 22000,
-      "time": 4.600377
+      "time": 0.70288
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 22000,
-      "time": 4.596792
+      "time": 0.630173
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 22000,
-      "time": 4.799953
+      "time": 0.605062
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 22000,
-      "time": 4.915037
+      "time": 0.68899
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 22000,
-      "time": 4.963274
+      "time": 0.752813
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 22000,
-      "time": 5.073471
+      "time": 0.762297
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 23000,
-      "time": 4.66829
+      "time": 0.649722
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 23000,
-      "time": 4.814217
+      "time": 0.791717
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 23000,
-      "time": 5.042437
+      "time": 0.73751
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 23000,
-      "time": 5.256236
+      "time": 0.823311
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 23000,
-      "time": 5.341914
+      "time": 0.744229
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 23000,
-      "time": 5.434171
+      "time": 0.696214
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 23000,
-      "time": 5.539887
+      "time": 0.863386
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 24000,
-      "time": 5.073663
+      "time": 0.865886
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 24000,
-      "time": 5.270893
+      "time": 0.627671
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 24000,
-      "time": 5.495727
+      "time": 0.85685
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 24000,
-      "time": 5.688964
+      "time": 0.852607
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 24000,
-      "time": 5.835027
+      "time": 0.84433
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 24000,
-      "time": 5.897116
+      "time": 0.898252
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 24000,
-      "time": 6.047565
+      "time": 0.932281
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 25000,
-      "time": 5.502695
+      "time": 0.909273
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 25000,
-      "time": 5.719982
+      "time": 0.917452
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 25000,
-      "time": 5.986408
+      "time": 0.793044
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 25000,
-      "time": 6.191037
+      "time": 0.96221
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 25000,
-      "time": 6.317644
+      "time": 0.916471
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 25000,
-      "time": 6.42029
+      "time": 0.859467
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 25000,
-      "time": 6.564595
+      "time": 1.000923
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 26000,
-      "time": 5.972431
+      "time": 0.998543
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 26000,
-      "time": 6.20865
+      "time": 0.838894
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 26000,
-      "time": 6.46025
+      "time": 0.817777
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 26000,
-      "time": 6.694716
+      "time": 0.96559
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 26000,
-      "time": 6.837253
+      "time": 0.904202
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 26000,
-      "time": 6.951052
+      "time": 0.89387
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 26000,
-      "time": 7.080206
+      "time": 1.0409
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 27000,
-      "time": 6.429604
+      "time": 1.026311
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 27000,
-      "time": 6.670938
+      "time": 0.794761
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 27000,
-      "time": 6.937802
+      "time": 1.154109
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 27000,
-      "time": 7.222856
+      "time": 1.078199
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 27000,
-      "time": 7.355104
+      "time": 1.112324
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 27000,
-      "time": 7.475908
+      "time": 1.000613
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 27000,
-      "time": 7.639089
+      "time": 1.063417
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 28000,
-      "time": 6.901879
+      "time": 1.149189
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 28000,
-      "time": 7.212914
+      "time": 1.160911
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 28000,
-      "time": 7.484407
+      "time": 1.083576
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 28000,
-      "time": 7.77135
+      "time": 0.978057
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 28000,
-      "time": 7.911472
+      "time": 1.103018
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 28000,
-      "time": 8.044165
+      "time": 1.22668
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 28000,
-      "time": 8.268253
+      "time": 1.250373
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 29000,
-      "time": 7.417714
+      "time": 0.91419
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 29000,
-      "time": 7.693561
+      "time": 1.244819
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 29000,
-      "time": 7.995453
+      "time": 1.092084
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 29000,
-      "time": 8.341181
+      "time": 1.295245
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 29000,
-      "time": 8.501118
+      "time": 1.272656
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 29000,
-      "time": 8.656692
+      "time": 1.154913
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 29000,
-      "time": 8.816965
+      "time": 1.341642
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 2,
       "size": 30000,
-      "time": 7.93929
+      "time": 1.229008
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 3,
       "size": 30000,
-      "time": 8.265104
+      "time": 0.978116
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 4,
       "size": 30000,
-      "time": 8.566185
+      "time": 1.159753
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 5,
       "size": 30000,
-      "time": 8.907769
+      "time": 1.35561
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 6,
       "size": 30000,
-      "time": 9.080031
+      "time": 1.439769
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 7,
       "size": 30000,
-      "time": 9.226128
+      "time": 1.419828
     },
     {
       "name": "Parallelized, Simple partial sum",
       "nbT": 8,
       "size": 30000,
-      "time": 9.429946
+      "time": 1.434514
     }
   ],
   "2": [
@@ -1448,1261 +1448,1261 @@
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 1000,
-      "time": 0.000708
+      "time": 0.00048
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 1000,
-      "time": 0.000542
+      "time": 0.000731
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 1000,
-      "time": 0.00047
+      "time": 0.000329
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 1000,
-      "time": 0.000369
+      "time": 0.000313
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 1000,
-      "time": 0.0004
+      "time": 0.000282
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 1000,
-      "time": 0.000373
+      "time": 0.000291
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 1000,
-      "time": 0.000444
+      "time": 0.000617
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 2000,
-      "time": 0.002114
+      "time": 0.003576
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 2000,
-      "time": 0.001752
+      "time": 0.001396
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 2000,
-      "time": 0.001421
+      "time": 0.001962
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 2000,
-      "time": 0.001216
+      "time": 0.00121
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 2000,
-      "time": 0.001022
+      "time": 0.001776
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 2000,
-      "time": 0.001029
+      "time": 0.001262
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 2000,
-      "time": 0.000928
+      "time": 0.001151
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 3000,
-      "time": 0.00493
+      "time": 0.006739
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 3000,
-      "time": 0.003176
+      "time": 0.005721
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 3000,
-      "time": 0.0028
+      "time": 0.004763
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 3000,
-      "time": 0.002028
+      "time": 0.003422
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 3000,
-      "time": 0.002154
+      "time": 0.001826
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 3000,
-      "time": 0.001801
+      "time": 0.002478
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 3000,
-      "time": 0.00162
+      "time": 0.002503
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 4000,
-      "time": 0.007031
+      "time": 0.007721
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 4000,
-      "time": 0.005218
+      "time": 0.004816
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 4000,
-      "time": 0.003927
+      "time": 0.007603
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 4000,
-      "time": 0.00344
+      "time": 0.006303
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 4000,
-      "time": 0.003168
+      "time": 0.005084
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 4000,
-      "time": 0.00308
+      "time": 0.004874
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 4000,
-      "time": 0.002459
+      "time": 0.00433
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 5000,
-      "time": 0.01099
+      "time": 0.021726
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 5000,
-      "time": 0.007501
+      "time": 0.01476
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 5000,
-      "time": 0.006437
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 5,
-      "size": 5000,
-      "time": 0.005173
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 6,
-      "size": 5000,
-      "time": 0.00436
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 7,
-      "size": 5000,
-      "time": 0.004111
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 8,
-      "size": 5000,
-      "time": 0.003474
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 2,
-      "size": 6000,
-      "time": 0.016413
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 3,
-      "size": 6000,
-      "time": 0.011045
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 4,
-      "size": 6000,
-      "time": 0.008372
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 5,
-      "size": 6000,
-      "time": 0.007614
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 6,
-      "size": 6000,
-      "time": 0.005746
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 7,
-      "size": 6000,
-      "time": 0.005014
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 8,
-      "size": 6000,
-      "time": 0.004765
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 2,
-      "size": 7000,
-      "time": 0.021991
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 3,
-      "size": 7000,
-      "time": 0.015512
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 4,
-      "size": 7000,
-      "time": 0.011212
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 5,
-      "size": 7000,
-      "time": 0.009562
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 6,
-      "size": 7000,
-      "time": 0.008131
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 7,
-      "size": 7000,
-      "time": 0.006742
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 8,
-      "size": 7000,
-      "time": 0.006175
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 2,
-      "size": 8000,
-      "time": 0.029294
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 3,
-      "size": 8000,
-      "time": 0.019676
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 4,
-      "size": 8000,
-      "time": 0.015208
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 5,
-      "size": 8000,
-      "time": 0.012066
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 6,
-      "size": 8000,
-      "time": 0.01023
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 7,
-      "size": 8000,
-      "time": 0.008931
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 8,
-      "size": 8000,
-      "time": 0.00771
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 2,
-      "size": 9000,
-      "time": 0.03686
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 3,
-      "size": 9000,
-      "time": 0.025297
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 4,
-      "size": 9000,
-      "time": 0.01872
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 5,
-      "size": 9000,
-      "time": 0.015039
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 6,
-      "size": 9000,
-      "time": 0.012647
-    },
-    {
-      "name": "Parallelized, Atomic partial sum",
-      "nbT": 7,
-      "size": 9000,
       "time": 0.011189
     },
     {
       "name": "Parallelized, Atomic partial sum",
+      "nbT": 5,
+      "size": 5000,
+      "time": 0.009323
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 6,
+      "size": 5000,
+      "time": 0.007745
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 7,
+      "size": 5000,
+      "time": 0.007265
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 8,
+      "size": 5000,
+      "time": 0.006769
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 2,
+      "size": 6000,
+      "time": 0.030389
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 3,
+      "size": 6000,
+      "time": 0.020449
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 4,
+      "size": 6000,
+      "time": 0.016282
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 5,
+      "size": 6000,
+      "time": 0.012624
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 6,
+      "size": 6000,
+      "time": 0.011466
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 7,
+      "size": 6000,
+      "time": 0.01146
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 8,
+      "size": 6000,
+      "time": 0.009089
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 2,
+      "size": 7000,
+      "time": 0.041455
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 3,
+      "size": 7000,
+      "time": 0.027767
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 4,
+      "size": 7000,
+      "time": 0.021118
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 5,
+      "size": 7000,
+      "time": 0.01776
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 6,
+      "size": 7000,
+      "time": 0.015136
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 7,
+      "size": 7000,
+      "time": 0.013009
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 8,
+      "size": 7000,
+      "time": 0.01164
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 2,
+      "size": 8000,
+      "time": 0.054777
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 3,
+      "size": 8000,
+      "time": 0.037611
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 4,
+      "size": 8000,
+      "time": 0.028049
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 5,
+      "size": 8000,
+      "time": 0.022507
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 6,
+      "size": 8000,
+      "time": 0.019622
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 7,
+      "size": 8000,
+      "time": 0.017092
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 8,
+      "size": 8000,
+      "time": 0.015877
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 2,
+      "size": 9000,
+      "time": 0.068636
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 3,
+      "size": 9000,
+      "time": 0.047606
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 4,
+      "size": 9000,
+      "time": 0.035336
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 5,
+      "size": 9000,
+      "time": 0.028049
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 6,
+      "size": 9000,
+      "time": 0.024698
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
+      "nbT": 7,
+      "size": 9000,
+      "time": 0.020897
+    },
+    {
+      "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 9000,
-      "time": 0.010788
+      "time": 0.01807
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 10000,
-      "time": 0.045707
+      "time": 0.084821
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 10000,
-      "time": 0.031019
+      "time": 0.057474
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 10000,
-      "time": 0.022848
+      "time": 0.044005
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 10000,
-      "time": 0.018483
+      "time": 0.035191
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 10000,
-      "time": 0.015727
+      "time": 0.029495
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 10000,
-      "time": 0.013997
+      "time": 0.02639
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 10000,
-      "time": 0.012054
+      "time": 0.023184
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 11000,
-      "time": 0.053918
+      "time": 0.105304
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 11000,
-      "time": 0.036743
+      "time": 0.067459
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 11000,
-      "time": 0.027358
+      "time": 0.051193
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 11000,
-      "time": 0.022716
+      "time": 0.04239
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 11000,
-      "time": 0.019077
+      "time": 0.035568
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 11000,
-      "time": 0.016785
+      "time": 0.029529
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 11000,
-      "time": 0.014503
+      "time": 0.026248
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 12000,
-      "time": 0.063258
+      "time": 0.120587
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 12000,
-      "time": 0.044301
+      "time": 0.082193
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 12000,
-      "time": 0.03381
+      "time": 0.064001
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 12000,
-      "time": 0.027112
+      "time": 0.050389
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 12000,
-      "time": 0.023437
+      "time": 0.041618
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 12000,
-      "time": 0.019751
+      "time": 0.037225
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 12000,
-      "time": 0.017215
+      "time": 0.032528
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 13000,
-      "time": 0.074873
+      "time": 0.145157
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 13000,
-      "time": 0.050536
+      "time": 0.097071
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 13000,
-      "time": 0.039271
+      "time": 0.072713
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 13000,
-      "time": 0.031691
+      "time": 0.05633
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 13000,
-      "time": 0.027125
+      "time": 0.050639
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 13000,
-      "time": 0.022812
+      "time": 0.042732
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 13000,
-      "time": 0.019923
+      "time": 0.037587
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 14000,
-      "time": 0.087114
+      "time": 0.170171
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 14000,
-      "time": 0.058742
+      "time": 0.114617
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 14000,
-      "time": 0.045807
+      "time": 0.080585
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 14000,
-      "time": 0.037325
+      "time": 0.068122
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 14000,
-      "time": 0.03127
+      "time": 0.057611
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 14000,
-      "time": 0.03006
+      "time": 0.049198
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 14000,
-      "time": 0.037136
+      "time": 0.044236
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 15000,
-      "time": 0.100566
+      "time": 0.194174
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 15000,
-      "time": 0.068444
+      "time": 0.130627
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 15000,
-      "time": 0.051402
+      "time": 0.100439
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 15000,
-      "time": 0.042903
+      "time": 0.078688
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 15000,
-      "time": 0.034889
+      "time": 0.067328
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 15000,
-      "time": 0.030359
+      "time": 0.057905
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 15000,
-      "time": 0.026997
+      "time": 0.051094
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 16000,
-      "time": 0.112497
+      "time": 0.222885
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 16000,
-      "time": 0.077299
+      "time": 0.152349
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 16000,
-      "time": 0.06104
+      "time": 0.110778
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 16000,
-      "time": 0.047955
+      "time": 0.091059
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 16000,
-      "time": 0.040535
+      "time": 0.075748
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 16000,
-      "time": 0.033928
+      "time": 0.067351
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 16000,
-      "time": 0.048877
+      "time": 0.058463
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 17000,
-      "time": 0.12807
+      "time": 0.251483
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 17000,
-      "time": 0.086677
+      "time": 0.170077
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 17000,
-      "time": 0.066453
+      "time": 0.125469
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 17000,
-      "time": 0.054082
+      "time": 0.103793
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 17000,
-      "time": 0.045666
+      "time": 0.088425
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 17000,
-      "time": 0.039459
+      "time": 0.074728
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 17000,
-      "time": 0.035065
+      "time": 0.068798
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 18000,
-      "time": 0.144158
+      "time": 0.281301
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 18000,
-      "time": 0.097028
+      "time": 0.190729
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 18000,
-      "time": 0.073129
+      "time": 0.142656
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 18000,
-      "time": 0.062776
+      "time": 0.115357
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 18000,
-      "time": 0.05126
+      "time": 0.095273
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 18000,
-      "time": 0.046609
+      "time": 0.087111
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 18000,
-      "time": 0.039187
+      "time": 0.086148
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 19000,
-      "time": 0.165272
+      "time": 0.311883
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 19000,
-      "time": 0.111243
+      "time": 0.211737
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 19000,
-      "time": 0.085649
+      "time": 0.162359
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 19000,
-      "time": 0.073238
+      "time": 0.127889
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 19000,
-      "time": 0.059707
+      "time": 0.105421
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 19000,
-      "time": 0.049694
+      "time": 0.090907
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 19000,
-      "time": 0.043574
+      "time": 0.081333
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 20000,
-      "time": 0.187944
+      "time": 0.340885
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 20000,
-      "time": 0.119913
+      "time": 0.230228
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 20000,
-      "time": 0.090466
+      "time": 0.175579
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 20000,
-      "time": 0.075368
+      "time": 0.138876
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 20000,
-      "time": 0.065773
+      "time": 0.122097
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 20000,
-      "time": 0.057859
+      "time": 0.102302
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 20000,
-      "time": 0.053775
+      "time": 0.096107
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 21000,
-      "time": 0.195192
+      "time": 0.384772
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 21000,
-      "time": 0.131543
+      "time": 0.255475
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 21000,
-      "time": 0.10206
+      "time": 0.193179
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 21000,
-      "time": 0.084425
+      "time": 0.157078
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 21000,
-      "time": 0.071291
+      "time": 0.129323
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 21000,
-      "time": 0.060982
+      "time": 0.114117
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 21000,
-      "time": 0.05321
+      "time": 0.10197
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 22000,
-      "time": 0.21469
+      "time": 0.416229
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 22000,
-      "time": 0.145056
+      "time": 0.280908
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 22000,
-      "time": 0.113248
+      "time": 0.209033
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 22000,
-      "time": 0.092782
+      "time": 0.168688
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 22000,
-      "time": 0.077376
+      "time": 0.14349
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 22000,
-      "time": 0.066301
+      "time": 0.124317
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 22000,
-      "time": 0.058386
+      "time": 0.108497
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 23000,
-      "time": 0.234085
+      "time": 0.449725
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 23000,
-      "time": 0.159262
+      "time": 0.310246
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 23000,
-      "time": 0.119724
+      "time": 0.233667
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 23000,
-      "time": 0.102763
+      "time": 0.187092
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 23000,
-      "time": 0.083579
+      "time": 0.159887
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 23000,
-      "time": 0.072818
+      "time": 0.136637
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 23000,
-      "time": 0.064019
+      "time": 0.118108
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 24000,
-      "time": 0.253554
+      "time": 0.493194
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 24000,
-      "time": 0.172779
+      "time": 0.330199
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 24000,
-      "time": 0.132935
+      "time": 0.247769
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 24000,
-      "time": 0.111022
+      "time": 0.199613
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 24000,
-      "time": 0.093297
+      "time": 0.168506
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 24000,
-      "time": 0.080691
+      "time": 0.145355
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 24000,
-      "time": 0.069975
+      "time": 0.128145
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 25000,
-      "time": 0.276384
+      "time": 0.53448
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 25000,
-      "time": 0.188295
+      "time": 0.359591
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 25000,
-      "time": 0.141096
+      "time": 0.264794
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 25000,
-      "time": 0.119019
+      "time": 0.215686
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 25000,
-      "time": 0.101893
+      "time": 0.18072
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 25000,
-      "time": 0.086568
+      "time": 0.155376
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 25000,
-      "time": 0.076171
+      "time": 0.141922
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 26000,
-      "time": 0.298209
+      "time": 0.575564
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 26000,
-      "time": 0.203092
+      "time": 0.383879
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 26000,
-      "time": 0.152438
+      "time": 0.287091
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 26000,
-      "time": 0.129753
+      "time": 0.23141
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 26000,
-      "time": 0.107431
+      "time": 0.194748
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 26000,
-      "time": 0.094238
+      "time": 0.167114
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 26000,
-      "time": 0.082885
+      "time": 0.148365
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 27000,
-      "time": 0.324219
+      "time": 0.620278
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 27000,
-      "time": 0.225292
+      "time": 0.41777
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 27000,
-      "time": 0.163731
+      "time": 0.311592
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 27000,
-      "time": 0.140148
+      "time": 0.249467
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 27000,
-      "time": 0.118326
+      "time": 0.210222
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 27000,
-      "time": 0.101686
+      "time": 0.181154
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 27000,
-      "time": 0.08885
+      "time": 0.160561
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 28000,
-      "time": 0.348578
+      "time": 0.673583
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 28000,
-      "time": 0.238467
+      "time": 0.44742
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 28000,
-      "time": 0.177387
+      "time": 0.338269
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 28000,
-      "time": 0.151414
+      "time": 0.270104
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 28000,
-      "time": 0.126804
+      "time": 0.225829
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 28000,
-      "time": 0.108746
+      "time": 0.193825
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 28000,
-      "time": 0.09589
+      "time": 0.174661
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 29000,
-      "time": 0.37428
+      "time": 0.721488
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 29000,
-      "time": 0.256267
+      "time": 0.479343
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 29000,
-      "time": 0.191527
+      "time": 0.355908
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 29000,
-      "time": 0.162041
+      "time": 0.290613
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 29000,
-      "time": 0.136747
+      "time": 0.242447
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 29000,
-      "time": 0.117022
+      "time": 0.20877
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 29000,
-      "time": 0.102794
+      "time": 0.185025
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 2,
       "size": 30000,
-      "time": 0.398453
+      "time": 0.770605
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 3,
       "size": 30000,
-      "time": 0.272031
+      "time": 0.512381
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 4,
       "size": 30000,
-      "time": 0.204225
+      "time": 0.387018
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 5,
       "size": 30000,
-      "time": 0.172668
+      "time": 0.313145
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 6,
       "size": 30000,
-      "time": 0.14665
+      "time": 0.27155
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 7,
       "size": 30000,
-      "time": 0.130281
+      "time": 0.221555
     },
     {
       "name": "Parallelized, Atomic partial sum",
       "nbT": 8,
       "size": 30000,
-      "time": 0.110147
+      "time": 0.196615
     }
   ],
   "3": [
@@ -2710,1261 +2710,1261 @@
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 1000,
-      "time": 0.000569
+      "time": 0.000623
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 1000,
-      "time": 0.000537
+      "time": 0.000372
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 1000,
-      "time": 0.000438
+      "time": 0.000323
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 1000,
-      "time": 0.000388
+      "time": 0.000298
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 1000,
-      "time": 0.000402
+      "time": 0.000476
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 1000,
-      "time": 0.000401
+      "time": 0.000281
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 1000,
-      "time": 0.000475
+      "time": 0.000491
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 2000,
-      "time": 0.002483
+      "time": 0.002249
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 2000,
-      "time": 0.001837
+      "time": 0.003215
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 2000,
-      "time": 0.001467
+      "time": 0.002162
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 2000,
-      "time": 0.00127
+      "time": 0.000931
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 2000,
-      "time": 0.001079
+      "time": 0.00075
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 2000,
-      "time": 0.000962
+      "time": 0.001506
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 2000,
-      "time": 0.000892
+      "time": 0.00129
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 3000,
-      "time": 0.004053
+      "time": 0.008683
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 3000,
-      "time": 0.003259
+      "time": 0.005225
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 3000,
-      "time": 0.002705
+      "time": 0.004071
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 3000,
-      "time": 0.002196
+      "time": 0.003448
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 3000,
-      "time": 0.002062
+      "time": 0.00311
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 3000,
-      "time": 0.002335
+      "time": 0.002846
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 3000,
-      "time": 0.001525
+      "time": 0.002379
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 4000,
-      "time": 0.007588
+      "time": 0.01407
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 4000,
-      "time": 0.005304
+      "time": 0.007431
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 4000,
-      "time": 0.004459
+      "time": 0.007614
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 4000,
-      "time": 0.003344
+      "time": 0.00641
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 4000,
-      "time": 0.002955
+      "time": 0.00524
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 4000,
-      "time": 0.002916
+      "time": 0.004371
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 4000,
-      "time": 0.002819
+      "time": 0.004065
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 5000,
-      "time": 0.011874
+      "time": 0.022682
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 5000,
-      "time": 0.0082
+      "time": 0.014923
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 5000,
-      "time": 0.006217
+      "time": 0.010853
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 5000,
-      "time": 0.004997
+      "time": 0.010311
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 5000,
-      "time": 0.004436
+      "time": 0.011879
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 5000,
-      "time": 0.00371
+      "time": 0.006998
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 5000,
-      "time": 0.003378
+      "time": 0.006849
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 6000,
-      "time": 0.016581
+      "time": 0.031854
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 6000,
-      "time": 0.011308
+      "time": 0.020602
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 6000,
-      "time": 0.009666
+      "time": 0.015691
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 6000,
-      "time": 0.007483
+      "time": 0.013746
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 6000,
-      "time": 0.006231
+      "time": 0.011822
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 6000,
-      "time": 0.005186
+      "time": 0.011363
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 6000,
-      "time": 0.005037
+      "time": 0.009142
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 7000,
-      "time": 0.022807
+      "time": 0.042031
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 7000,
-      "time": 0.01522
+      "time": 0.027372
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 7000,
-      "time": 0.011554
+      "time": 0.021421
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 7000,
-      "time": 0.009395
+      "time": 0.017096
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 7000,
-      "time": 0.007894
+      "time": 0.014626
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 7000,
-      "time": 0.007102
+      "time": 0.013012
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 7000,
-      "time": 0.006233
+      "time": 0.012092
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 8000,
-      "time": 0.029669
+      "time": 0.055141
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 8000,
-      "time": 0.021017
+      "time": 0.037332
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 8000,
-      "time": 0.015281
+      "time": 0.02971
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 8000,
-      "time": 0.012552
+      "time": 0.022805
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 8000,
-      "time": 0.010222
+      "time": 0.019739
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 8000,
-      "time": 0.009304
+      "time": 0.016789
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 8000,
-      "time": 0.013249
+      "time": 0.014783
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 9000,
-      "time": 0.038247
+      "time": 0.069983
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 9000,
-      "time": 0.026024
+      "time": 0.046382
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 9000,
-      "time": 0.019283
+      "time": 0.035223
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 9000,
-      "time": 0.016028
+      "time": 0.027902
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 9000,
-      "time": 0.013673
+      "time": 0.024047
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 9000,
-      "time": 0.011506
+      "time": 0.021041
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 9000,
-      "time": 0.010304
+      "time": 0.018871
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 10000,
-      "time": 0.04604
+      "time": 0.084965
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 10000,
-      "time": 0.031301
+      "time": 0.057336
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 10000,
-      "time": 0.0239
+      "time": 0.043869
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 10000,
-      "time": 0.019142
+      "time": 0.035573
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 10000,
-      "time": 0.016577
+      "time": 0.030297
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 10000,
-      "time": 0.014573
+      "time": 0.024964
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 10000,
-      "time": 0.012376
+      "time": 0.024178
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 11000,
-      "time": 0.055177
+      "time": 0.10318
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 11000,
-      "time": 0.037836
+      "time": 0.068517
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 11000,
-      "time": 0.028855
+      "time": 0.052767
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 11000,
-      "time": 0.023322
+      "time": 0.041883
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 11000,
-      "time": 0.019583
+      "time": 0.035117
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 11000,
-      "time": 0.01678
+      "time": 0.0327
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 11000,
-      "time": 0.014936
+      "time": 0.027809
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 12000,
-      "time": 0.066256
+      "time": 0.12103
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 12000,
-      "time": 0.044874
+      "time": 0.082829
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 12000,
-      "time": 0.034663
+      "time": 0.06207
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 12000,
-      "time": 0.028259
+      "time": 0.048945
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 12000,
-      "time": 0.0236
+      "time": 0.04227
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 12000,
-      "time": 0.020063
+      "time": 0.036876
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 12000,
-      "time": 0.01765
+      "time": 0.032517
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 13000,
-      "time": 0.078436
+      "time": 0.144027
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 13000,
-      "time": 0.052601
+      "time": 0.095624
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 13000,
-      "time": 0.041212
+      "time": 0.073121
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 13000,
-      "time": 0.033452
+      "time": 0.057576
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 13000,
-      "time": 0.028069
+      "time": 0.048548
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 13000,
-      "time": 0.023543
+      "time": 0.042456
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 13000,
-      "time": 0.020749
+      "time": 0.038224
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 14000,
-      "time": 0.099418
+      "time": 0.169759
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 14000,
-      "time": 0.062438
+      "time": 0.111342
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 14000,
-      "time": 0.04912
+      "time": 0.084087
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 14000,
-      "time": 0.03843
+      "time": 0.068029
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 14000,
-      "time": 0.033534
+      "time": 0.058873
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 14000,
-      "time": 0.027584
+      "time": 0.050036
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 14000,
-      "time": 0.02395
+      "time": 0.044265
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 15000,
-      "time": 0.104386
+      "time": 0.194102
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 15000,
-      "time": 0.070829
+      "time": 0.129692
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 15000,
-      "time": 0.05488
+      "time": 0.099087
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 15000,
-      "time": 0.045088
+      "time": 0.079474
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 15000,
-      "time": 0.036639
+      "time": 0.066445
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 15000,
-      "time": 0.031327
+      "time": 0.057943
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 15000,
-      "time": 0.028475
+      "time": 0.051456
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 16000,
-      "time": 0.120006
+      "time": 0.220299
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 16000,
-      "time": 0.085528
+      "time": 0.146775
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 16000,
-      "time": 0.061735
+      "time": 0.11179
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 16000,
-      "time": 0.05079
+      "time": 0.089541
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 16000,
-      "time": 0.042283
+      "time": 0.076368
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 16000,
-      "time": 0.035882
+      "time": 0.071484
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 16000,
-      "time": 0.034935
+      "time": 0.058851
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 17000,
-      "time": 0.133802
+      "time": 0.248606
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 17000,
-      "time": 0.091793
+      "time": 0.184708
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 17000,
-      "time": 0.070038
+      "time": 0.125303
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 17000,
-      "time": 0.055828
+      "time": 0.101134
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 17000,
-      "time": 0.047875
+      "time": 0.087473
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 17000,
-      "time": 0.042828
+      "time": 0.074286
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 17000,
-      "time": 0.037029
+      "time": 0.066213
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 18000,
-      "time": 0.156937
+      "time": 0.279538
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 18000,
-      "time": 0.103786
+      "time": 0.185287
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 18000,
-      "time": 0.083759
+      "time": 0.140206
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 18000,
-      "time": 0.063905
+      "time": 0.112375
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 18000,
-      "time": 0.055257
+      "time": 0.0949
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 18000,
-      "time": 0.046038
+      "time": 0.082973
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 18000,
-      "time": 0.040265
+      "time": 0.073525
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 19000,
-      "time": 0.165753
+      "time": 0.307598
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 19000,
-      "time": 0.11939
+      "time": 0.228485
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 19000,
-      "time": 0.090805
+      "time": 0.15945
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 19000,
-      "time": 0.075864
+      "time": 0.125769
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 19000,
-      "time": 0.067452
+      "time": 0.107712
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 19000,
-      "time": 0.052276
+      "time": 0.091202
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 19000,
-      "time": 0.044799
+      "time": 0.082027
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 20000,
-      "time": 0.186933
+      "time": 0.343995
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 20000,
-      "time": 0.124239
+      "time": 0.238201
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 20000,
-      "time": 0.09332
+      "time": 0.331396
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 20000,
-      "time": 0.079991
+      "time": 0.146234
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 20000,
-      "time": 0.066705
+      "time": 0.118355
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 20000,
-      "time": 0.057004
+      "time": 0.100745
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 20000,
-      "time": 0.049619
+      "time": 0.091127
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 21000,
-      "time": 0.201294
+      "time": 0.378784
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 21000,
-      "time": 0.136584
+      "time": 0.253076
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 21000,
-      "time": 0.103843
+      "time": 0.193013
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 21000,
-      "time": 0.090724
+      "time": 0.153681
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 21000,
-      "time": 0.078088
+      "time": 0.130332
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 21000,
-      "time": 0.066625
+      "time": 0.114075
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 21000,
-      "time": 0.05547
+      "time": 0.099606
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 22000,
-      "time": 0.221397
+      "time": 0.414711
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 22000,
-      "time": 0.149927
+      "time": 0.279992
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 22000,
-      "time": 0.114811
+      "time": 0.206613
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 22000,
-      "time": 0.095401
+      "time": 0.168518
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 22000,
-      "time": 0.079336
+      "time": 0.143221
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 22000,
-      "time": 0.068412
+      "time": 0.122167
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 22000,
-      "time": 0.060249
+      "time": 0.109363
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 23000,
-      "time": 0.241451
+      "time": 0.450973
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 23000,
-      "time": 0.164329
+      "time": 0.299904
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 23000,
-      "time": 0.1261
+      "time": 0.229748
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 23000,
-      "time": 0.105534
+      "time": 0.187301
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 23000,
-      "time": 0.091633
+      "time": 0.153986
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 23000,
-      "time": 0.075252
+      "time": 0.136257
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 23000,
-      "time": 0.065577
+      "time": 0.11807
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 24000,
-      "time": 0.26445
+      "time": 0.48893
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 24000,
-      "time": 0.178788
+      "time": 0.323882
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 24000,
-      "time": 0.143081
+      "time": 0.248826
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 24000,
-      "time": 0.115492
+      "time": 0.198957
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 24000,
-      "time": 0.096959
+      "time": 0.165483
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 24000,
-      "time": 0.081715
+      "time": 0.146822
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 24000,
-      "time": 0.076887
+      "time": 0.127612
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 25000,
-      "time": 0.283445
+      "time": 0.52894
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 25000,
-      "time": 0.193078
+      "time": 0.355269
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 25000,
-      "time": 0.145781
+      "time": 0.265069
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 25000,
-      "time": 0.123467
+      "time": 0.217095
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 25000,
-      "time": 0.104028
+      "time": 0.182744
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 25000,
-      "time": 0.089683
+      "time": 0.155722
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 25000,
-      "time": 0.080089
+      "time": 0.139107
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 26000,
-      "time": 0.30882
+      "time": 0.57702
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 26000,
-      "time": 0.209484
+      "time": 0.387695
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 26000,
-      "time": 0.157938
+      "time": 0.291843
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 26000,
-      "time": 0.131927
+      "time": 0.233569
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 26000,
-      "time": 0.109496
+      "time": 0.198129
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 26000,
-      "time": 0.097108
+      "time": 0.167078
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 26000,
-      "time": 0.084895
+      "time": 0.147183
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 27000,
-      "time": 0.332173
+      "time": 0.617067
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 27000,
-      "time": 0.226158
+      "time": 0.418187
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 27000,
-      "time": 0.170129
+      "time": 0.31097
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 27000,
-      "time": 0.158057
+      "time": 0.249607
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 27000,
-      "time": 0.121881
+      "time": 0.210142
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 27000,
-      "time": 0.103371
+      "time": 0.180787
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 27000,
-      "time": 0.098499
+      "time": 0.162053
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 28000,
-      "time": 0.368434
+      "time": 0.657034
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 28000,
-      "time": 0.246695
+      "time": 0.448556
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 28000,
-      "time": 0.1866
+      "time": 0.335128
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 28000,
-      "time": 0.157395
+      "time": 0.271902
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 28000,
-      "time": 0.130914
+      "time": 0.225179
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 28000,
-      "time": 0.111948
+      "time": 0.199334
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 28000,
-      "time": 0.099016
+      "time": 0.171385
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 29000,
-      "time": 0.384501
+      "time": 0.713151
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 29000,
-      "time": 0.260133
+      "time": 0.477994
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 29000,
-      "time": 0.19697
+      "time": 0.358028
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 29000,
-      "time": 0.165584
+      "time": 0.291611
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 29000,
-      "time": 0.141001
+      "time": 0.242802
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 29000,
-      "time": 0.120771
+      "time": 0.213182
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 29000,
-      "time": 0.106296
+      "time": 0.18402
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 2,
       "size": 30000,
-      "time": 0.409742
+      "time": 0.757703
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 3,
       "size": 30000,
-      "time": 0.280176
+      "time": 0.507423
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 4,
       "size": 30000,
-      "time": 0.209482
+      "time": 0.385239
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 5,
       "size": 30000,
-      "time": 0.181079
+      "time": 0.309809
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 6,
       "size": 30000,
-      "time": 0.151386
+      "time": 0.257159
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 7,
       "size": 30000,
-      "time": 0.129296
+      "time": 0.224225
     },
     {
       "name": "Parallelized, Optimized partial sum",
       "nbT": 8,
       "size": 30000,
-      "time": 0.115773
+      "time": 0.203285
     }
   ]
 }
