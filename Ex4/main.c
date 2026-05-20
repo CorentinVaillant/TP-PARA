@@ -1,60 +1,55 @@
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/time.h>
+
 #include "./packing.h"
-#include <assert.h>
-#include <omp.h>
+#include "./pb_loader.h"
+int main(int argc, char **argv) {
 
-int main() {
+  if (argc == 1 || !strncmp("-h\0", argv[1], 3) || argc != 3) {
+    printf("Usages : \n"
+           "$%s -h # give you usage\n"
+           "$%s <PbPath> <NbT> \n "
+           "\t# PbPath : Path to the problem configuration file \n "
+           "\t# NbT    : Number of threads to use \n ",
+           argv[0], argv[0]);
+    return 0;
+  }
+
+  // Reading inputs
+  char *pb_filename = argv[1];
   ProblemConf conf;
-  read_problem("./pb/pb1.pb", &conf);
+  read_problem(pb_filename, &conf);
 
-  // -- Init tab
-  const int N = conf.num_obj;
-  const int C = conf.capacity;
-  const int *M = conf.weight;
-  const int *U = conf.utility;
+  size_t thread_count = atoi(argv[2]);
 
-  int *S = calloc(N * (C + 1), sizeof(int));
-  int *S_index(int i, int j) {
-    assert(0 <= i && i < N && "Wrong index");
-    assert(0 <= j && j < (C + 1) && "Wrong index");
+  // mesuring time
+  double start, stop;
+  start = omp_get_wtime();
+  int *RES;
+  size_t RES_size;
+  int max_utility;
+  int result =
+      resolve_packing(conf, thread_count, &max_utility, &RES, &RES_size);
+  stop = omp_get_wtime();
 
-    return &S[i * (C + 1) + j];
-  };
-
-  int *E = calloc(N, sizeof(int));
-  // -- Compute the tab
-  // First row
-  // i = 0
-  for (size_t j = 0; j < C + 1; j++) {
-    *S_index(0, j) = M[0] <= j ? U[0] : 0;
+  if (result) {
+    return result;
   }
 
-  for (int i = 1; i < N; i++) {
-    for (int j = 0; j < C + 1; j++) {
-      // case 1.
-      int first = *S_index(i - 1, j);
-      int second = first;
+  double time_taken = stop - start;
 
-      // case 2.
-      if (j - M[i] >= 0) {
-        size_t k = j - M[i];
-        second = *S_index(i - 1, k) + M[i];
-      }
+  // Out as a json file
+  printf("{\n"
 
-      *S_index(i, j) = first > second ? first : second;
-    }
-  }
+         "\t\"pb\": \"%s\", \n"
+         "\t\"nbT\": %lu, \n"
+         "\t\"time\": %f, \n"
+         "\t\"maxUtility\": %d \n"
+         "}\n",
+         pb_filename, thread_count, time_taken, max_utility);
 
-  // -- Display the tab
-  for (size_t i = 0; i < N; i++) {
-    for (size_t j = 0; j < C + 1; j++)
-      printf("%d  ", *S_index(i, j));
-    printf("\n");
-  }
-
-  // -- Free tab
-  free(S);
-  S = NULL;
-  free(E);
-  E = NULL;
   return 0;
 }

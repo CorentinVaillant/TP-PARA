@@ -1,67 +1,83 @@
 #pragma once
-#include <stdio.h>
+
+#include "./pb_loader.h"
+#include <assert.h>
+#include <omp.h>
 #include <stdlib.h>
 
-#define MAX_NUM_OBJ 100
+#define RESOLVE_PACK_WRONG_COMPUTATION_ERR 1
+#define RESOLVE_PACK_ALLOCATION_ERR 2
 
-typedef struct
-{
-  int num_obj;
-  int capacity;
-  int weight[MAX_NUM_OBJ];
-  int utility[MAX_NUM_OBJ];
-} ProblemConf;
+#define S_INDEX(i, j) (&S[(i) * (C + 1) + (j)])
+#define UNWRAP_PTR(ptr)                                                        \
+  if (!ptr)                                                                    \
+  return RESOLVE_PACK_ALLOCATION_ERR
 
-void read_problem(char *filename, ProblemConf *out)
-{
+int resolve_packing(ProblemConf conf, size_t thread_count, int *max_utility_out,
+                    int **RES, size_t *RES_size_out) {
+  // -- Init tab
+  const int N = conf.num_obj;
+  const int C = conf.capacity;
+  const int *M = conf.weight;
+  const int *U = conf.utility;
 
-  out->num_obj = 0;
+  int *S = calloc(N * (C + 1), sizeof(int));
+  UNWRAP_PTR(S);
 
-  char line[256];
-
-  FILE *problem = fopen(filename, "r");
-  if (problem == NULL)
+#pragma omp parallel num_threads(thread_count)
   {
-    fprintf(stderr, "File %s not found.\n", filename);
-    exit(-1);
-  }
 
-  while (fgets(line, 256, problem) != NULL)
-  {
-    switch (line[0])
-    {
-    case 'c': // capacity
-      if (sscanf(&(line[2]), "%d\n", &out->capacity) != 1)
-      {
-        fprintf(stderr, "Error in file format in line:\n");
-        fprintf(stderr, "%s", line);
-        exit(-1);
-      }
-      break;
+    for (int i = 0; i < N; i++) {
+#pragma omp for
+      for (int j = 0; j < C + 1; j++) {
+        // init of the first line
+        if (i == 0) {
+          *S_INDEX(0, j) = M[0] <= j ? U[0] : 0;
+        } else {
 
-    case 'o': // graph size
-      if (out->num_obj >= MAX_NUM_OBJ)
-      {
-        fprintf(stderr, "Too many objects (%d): limit is %d\n", out->num_obj, MAX_NUM_OBJ);
-        exit(-1);
-      }
-      if (sscanf(&(line[2]), "%d %d\n", &(out->weight[out->num_obj]), &(out->utility[out->num_obj])) != 2)
-      {
-        fprintf(stderr, "Error in file format in line:\n");
-        fprintf(stderr, "%s", line);
-        exit(-1);
-      }
-      else
-        out->num_obj++;
-      break;
+          // case 1.
+          int first = *S_INDEX(i - 1, j);
+          int second = first;
 
-    default:
-      break;
+          // case 2.
+          if (j - M[i] >= 0) {
+            int k = j - M[i];
+            second = *S_INDEX(i - 1, k) + U[i];
+          }
+
+          *S_INDEX(i, j) = first > second ? first : second;
+        }
+      }
+      // Synchronization barrier.
     }
   }
-  if (out->num_obj == 0)
-  {
-    fprintf(stderr, "Could not find any object in the problem file. Exiting.");
-    exit(-1);
+
+  // -- Getting solutions
+  *max_utility_out = *S_INDEX(N - 1, C);
+  *RES = calloc(N, sizeof(int));
+  *RES_size_out = (size_t)N;
+  int *E = *RES;
+  int i = N - 1;
+  int j = C;
+
+  while (i > 0) {
+
+    if (*S_INDEX(i, j) == *S_INDEX(i - 1, j))
+      i--;
+    else if (j >= M[i] && *S_INDEX(i, j) == *S_INDEX(i - 1, j - M[i]) + U[i]) {
+      E[i] = 1;
+      j -= M[i];
+      i--;
+    } else {
+      // Should no append
+      return RESOLVE_PACK_WRONG_COMPUTATION_ERR;
+    }
   }
+
+  if (*S_INDEX(i, j) != 0)
+    E[i] = 1;
+  // -- Free tab
+  free(S);
+  S = NULL;
+  return 0;
 }
