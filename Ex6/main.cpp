@@ -1,32 +1,41 @@
+#include <cstddef>
+#include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
 
 #include <omp.h>
+#include <string>
+#include <vector>
 
 #include "./dijkstra.hpp"
-
-int num_nodes, num_edges;
-// table 'edges' is used to store all edge data
-//   (instead of dynamically allocating memory at each edge creation)
-struct direct_edge_struct *edges;
-// edge_counter is used to allocate entries in table 'edges'
-int edge_counter = 0;
-// table 'nodes' contains the direct edges out of each node
-//  'node[i]' is a linked list to all edges starting from node i
 
 /******************************************************************************/
 int main(int argc, char **argv) {
 
-  if (argc < 2) {
-    fprintf(stderr, "Usage: dijkstra <graph file name>\n");
+  if (argc < 3) {
+    std::cerr << "Usage: " << argv[0]
+              << " <graph file name> <number of thread to use>\n";
     exit(-1);
-  } 
+  }
 
+  auto nb_t = std::stoul(argv[2]);
   Graph graph(argv[1]);
 
-  graph.debug_print();
+  std::vector<int> prev_tab;
+  auto time = graph.dijkstra(nb_t, &prev_tab);
+
+  constexpr int W = 4;
+  std::cout << "//";
+  for (size_t i = 0; i < prev_tab.size(); i++) {
+    std::cout << std::setw(W) << i << " |";
+  }
+  std::cout << std::endl << "//";
+  for (int p : prev_tab) {
+    std::cout << std::setw(W) << p << " |";
+  }
+  std::cout << std::endl;
+
+  std::cout << "\"time\":" << time << ",\n";
 
   return 0;
 }
-
-/******************************************************************************/
