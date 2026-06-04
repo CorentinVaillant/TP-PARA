@@ -56,7 +56,7 @@ public:
           throw std::runtime_error("Error in file format in line:\n");
 
         } else
-          std::clog << "Graph contains " << num_nodes << " nodes and "
+          std::clog << "//Graph contains " << num_nodes << " nodes and "
                     << num_edges << " edges\n";
 
         nodes.resize(num_nodes);
@@ -143,12 +143,13 @@ public:
     nb_thread = nb_thread == 0 ? 8 : nb_thread;
 
     NearestNodeDistPair nearest_node_dist;
-    
+
     nearest_node_dist = NearestNodeDistPair{};
     P[0] = 1;
 #pragma omp parallel num_threads(nb_thread)
     {
 
+      // Init
 #pragma omp for
       for (size_t i = 1; i < num_nodes; i++) {
         prev[i] = -1;
@@ -156,12 +157,12 @@ public:
         d[i] = get_distance(0, i);
       } // Barrier
 
+      // Compute
       for (size_t step = 1; step < num_nodes; step++) {
 
 #pragma omp single
-        {
-          nearest_node_dist = {}; // reset at each iter
-        } // Barrier
+        nearest_node_dist = {INFINITE, -1}; // reset at each iter
+                                            // Barrier
 
         // find the nearest node
 #pragma omp for reduction(min_dist_node_reduc : nearest_node_dist)

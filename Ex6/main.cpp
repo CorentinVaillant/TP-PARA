@@ -24,18 +24,11 @@ int main(int argc, char **argv) {
   std::vector<int> prev_tab;
   auto time = graph.dijkstra(nb_t, &prev_tab);
 
-  constexpr int W = 4;
-  std::cout << "//";
-  for (size_t i = 0; i < prev_tab.size(); i++) {
-    std::cout << std::setw(W) << i << " |";
-  }
-  std::cout << std::endl << "//";
-  for (int p : prev_tab) {
-    std::cout << std::setw(W) << p << " |";
-  }
-  std::cout << std::endl;
+  std::cout << "{\n"
+            << "\t\"time\":" << time << "\n"
+            << "}"
 
-  std::cout << "\"time\":" << time << ",\n";
+      ;
 
   return 0;
 }
