@@ -1,18 +1,20 @@
-// run(){ gcc -Wall -fopenmp ./k_means.c -o out.exe && ./out.exe $1 $2 $3; }
-
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
+// #define DOUBLE_PRECISION
 
 #ifdef DOUBLE_PRECISION
 typedef double Float;
-#define Float_abs fabs
+#define abs fabs
 #else
 typedef float Float;
-#define Float_abs fabsf
+#define abs fabsf
 #endif
 
 // ======== Math ======== //
+
 typedef struct {
   Float x, y, z;
   int cluster;
@@ -28,9 +30,9 @@ void add_point(Point *p1, Point p2) {
 }
 
 int point_equal(Point p1, Point p2) {
-#define EPSILON 1e-6f
-  return Float_abs(p1.x - p2.x) < EPSILON && Float_abs(p1.y - p2.y) < EPSILON &&
-         Float_abs(p1.z - p2.z) < EPSILON;
+#define EPSILON 1e-4f
+  return abs(p1.x - p2.x) < EPSILON && abs(p1.y - p2.y) < EPSILON &&
+         abs(p1.z - p2.z) < EPSILON;
 }
 
 Float dot(Point p1, Point p2) {
@@ -55,7 +57,6 @@ typedef struct {
 
 void cluster_add_point(Cluster *inout, Point p) {
   add_point(&inout->point_acc, p);
-#pragma omp atomic
   inout->points_count++;
 }
 
@@ -65,10 +66,10 @@ Float cluster_dist(Cluster cluster, Point p) { return dist(cluster.center, p); }
 /// The accumulation point, and the number of points are zeroed.
 ///@return `true` if the barycenter changed.
 int compute_barycenter(Cluster *cluster_inout) {
-  if (cluster_inout->points_count == 0)
-    printf("empty cluster\n");
+
   if (cluster_inout->points_count == 0)
     return 0;
+
   Point center = cluster_inout->point_acc;
   center.x /= (Float)(cluster_inout->points_count);
   center.y /= (Float)(cluster_inout->points_count);
@@ -83,6 +84,32 @@ int compute_barycenter(Cluster *cluster_inout) {
   cluster_inout->points_count = 0;
 
   return changed;
+}
+
+typedef struct {
+  Cluster *alloc;
+  size_t count;
+} ClusterVector;
+
+ClusterVector clust_vec_init(size_t count) {
+  ClusterVector result;
+  result.alloc = calloc(count, sizeof(Cluster));
+  result.count = count;
+  return result;
+}
+
+void clust_vec_free(ClusterVector *inout) {
+  free(inout->alloc);
+  inout->count = 0;
+}
+
+ClusterVector clust_vec_clone(ClusterVector in) {
+  ClusterVector result;
+  result.alloc = malloc(in.count * sizeof(Cluster));
+  memcpy(result.alloc, in.alloc, in.count * sizeof(Cluster));
+  result.count = in.count;
+
+  return result;
 }
 
 // ======== Parsing ======== //
@@ -109,7 +136,11 @@ int parse_points(FILE *file, Point **points_out) {
     }
 
     Float x, y, z;
+#ifdef DOUBLE_PRECISION
+    sscanf(line, "%lf %lf %lf", &x, &y, &z);
+#else
     sscanf(line, "%f %f %f", &x, &y, &z);
+#endif
     points[i].x = x;
     points[i].y = y;
     points[i].z = z;
@@ -128,67 +159,79 @@ int kmeans(Point *points, int points_counts, int clusters_count, int nb_t) {
     return 1;
   }
 
-  Cluster *clusters = malloc(clusters_count * sizeof(Cluster));
+  ClusterVector clusters = clust_vec_init(clusters_count);
   int converged = 0;
 
 #pragma omp parallel num_threads(nb_t)
   {
 
+    ClusterVector local_clust = clust_vec_init(clusters_count);
+
     // Assign the k first clusters
 #pragma omp for
     for (int k = 0; k < clusters_count; k++) {
-      points[k].cluster = k;
-      clusters[k].center = points[k];
-      clusters[k].points_count = 0;
-      clusters[k].point_acc.x = 0;
-      clusters[k].point_acc.y = 0;
-      clusters[k].point_acc.z = 0;
+      clusters.alloc[k].center = points[k];
+      // The rest is zerod by default (calloc)
     }
-    // Implicit Barrier
 
-    for (;;) {
-#pragma omp barrier
+    while (1) {
+#pragma omp atomic
+      iter++;
+      if (iter > 492)
+        printf("AH !\n");
 
 #pragma omp single
       converged = 1;
-
-      // Implicit Barrier
+      // Barrier
 
 #pragma omp for
       for (int i = 0; i < points_counts; i++) {
+        // Copy the point to avoid cache concurency
         Point p = points[i];
+
         // Finding the nearest cluster
         int nearest = 0;
-        Float min_dist = cluster_dist(clusters[0], p);
+        Float min_dist = cluster_dist(clusters.alloc[0], p);
 
         for (int k = 1; k < clusters_count; k++) {
-          Float dist = cluster_dist(clusters[k], p);
+          Float dist = cluster_dist(clusters.alloc[k], p);
           if (min_dist > dist) {
             min_dist = dist;
             nearest = k;
           }
         }
 
-        cluster_add_point(&clusters[nearest], p);
+        cluster_add_point(&local_clust.alloc[nearest], p);
+
+        // Copy only the changing part to avoid cache concurency
         points[i].cluster = nearest;
       }
-      // Implicit Barrier
-
-      // Computing barycenter
-#pragma omp for reduction(&& : converged)
-      for (int k = 0; k < clusters_count; k++)
-        converged = converged && !compute_barycenter(&clusters[k]);
-      // Implicit Barrier
+#pragma omp for
+      for (int k = 0; k < clusters_count; k++) {
+        add_point(&clusters.alloc[k].point_acc, local_clust.alloc[k].point_acc);
 
 #pragma omp atomic
-      iter++;
-#pragma omp barrier
+        clusters.alloc[k].points_count += local_clust.alloc[k].points_count;
+
+        local_clust.alloc[k].points_count = 0;
+        local_clust.alloc[k].point_acc.x = 0;
+        local_clust.alloc[k].point_acc.y = 0;
+        local_clust.alloc[k].point_acc.z = 0;
+      }
+
+
+      //  Computing barycenter
+#pragma omp for reduction(&& : converged)
+      for (int k = 0; k < clusters_count; k++)
+        converged = converged && !compute_barycenter(&clusters.alloc[k]);
+
       if (converged)
         break;
     }
+    clust_vec_free(&local_clust);
   }
 
-  free(clusters);
+  clust_vec_free(&clusters);
   return 0;
 }
 
@@ -216,18 +259,19 @@ int main(int argc, char **argv) {
   Point *points;
   int nb_points = parse_points(file, &points);
   fclose(file);
+  printf("//parsed !\n");
 
   if (nb_points < 0) {
     fprintf(stderr, "failled to parse the file !\n");
     return 2;
   }
   kmeans(points, nb_points, cluster_count, nbT);
-  printf("iter :%d\n", iter);
+  printf("iter : %d\n", iter);
 
-#define REGISTER_RESULT
 #ifdef REGISTER_RESULT
   char result_filename[256] = {0};
-  snprintf(result_filename, 255, "result_%s_%s.json", argv[2], argv[3]);
+  snprintf(result_filename, 255, "result_%d_%s_%s.json", nb_points, argv[2],
+           argv[3]);
   FILE *result_register = fopen(result_filename, "w");
   if (!result_register) {
     fprintf(stderr, "Failed to open the %s !\n", result_filename);
