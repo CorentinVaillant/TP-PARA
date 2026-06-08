@@ -1,89 +1,42 @@
 // run(){ gcc -Wall -fopenmp ./k_means.c -o out.exe && ./out.exe $1 $2 $3; }
 
+#include <float.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 
+#include <omp.h>
+
 #ifdef DOUBLE_PRECISION
 typedef double Float;
 #define Float_abs fabs
+#define Float_INFTY INFINITY
+#define EPSILON 1e-8
 #else
 typedef float Float;
 #define Float_abs fabsf
+#define Float_INFTY INFINITY
+#define EPSILON 1e-6f
 #endif
 
-// ======== Math ======== //
+// ======== Types ======== //
 typedef struct {
   Float x, y, z;
+} Vec3;
+
+typedef struct {
+  Vec3 pos;
   int cluster;
 } Point;
 
-void add_point(Point *p1, Point p2) {
-#pragma omp atomic
-  p1->x += p2.x;
-#pragma omp atomic
-  p1->y += p2.y;
-#pragma omp atomic
-  p1->z += p2.z;
-}
-
-int point_equal(Point p1, Point p2) {
-#define EPSILON 1e-6f
-  return Float_abs(p1.x - p2.x) < EPSILON && Float_abs(p1.y - p2.y) < EPSILON &&
-         Float_abs(p1.z - p2.z) < EPSILON;
-}
-
-Float dot(Point p1, Point p2) {
-  return p1.x * p2.x + p1.y * p2.y + p1.z * p2.z;
-}
-
-Float dist(Point p1, Point p2) {
-  Point vec = {
-      p1.x - p2.x,
-      p1.y - p2.y,
-      p1.z - p2.z,
-  };
-
-  return dot(vec, vec);
-}
-
 typedef struct {
-  Point center;
-  int points_count;
-  Point point_acc;
+  Vec3 pos;
 } Cluster;
 
-void cluster_add_point(Cluster *inout, Point p) {
-  add_point(&inout->point_acc, p);
-#pragma omp atomic
-  inout->points_count++;
-}
-
-Float cluster_dist(Cluster cluster, Point p) { return dist(cluster.center, p); }
-
-///@brief Compute the barycenter of a cluster,
-/// The accumulation point, and the number of points are zeroed.
-///@return `true` if the barycenter changed.
-int compute_barycenter(Cluster *cluster_inout) {
-  if (cluster_inout->points_count == 0)
-    printf("empty cluster\n");
-  if (cluster_inout->points_count == 0)
-    return 0;
-  Point center = cluster_inout->point_acc;
-  center.x /= (Float)(cluster_inout->points_count);
-  center.y /= (Float)(cluster_inout->points_count);
-  center.z /= (Float)(cluster_inout->points_count);
-
-  int changed = !point_equal(cluster_inout->center, center);
-
-  cluster_inout->center = center;
-  cluster_inout->point_acc.x = 0;
-  cluster_inout->point_acc.y = 0;
-  cluster_inout->point_acc.z = 0;
-  cluster_inout->points_count = 0;
-
-  return changed;
-}
+typedef struct {
+  Float x, y, z;
+  int count;
+} Acc;
 
 // ======== Parsing ======== //
 int parse_points(FILE *file, Point **points_out) {
@@ -97,7 +50,6 @@ int parse_points(FILE *file, Point **points_out) {
     return -1;
   }
   sscanf(line, "%d", &points_count);
-  printf("Number of point : %d\n", points_count);
   // Allocate the good amount of point
   Point *points = malloc(points_count * sizeof(Point));
 
@@ -110,9 +62,9 @@ int parse_points(FILE *file, Point **points_out) {
 
     Float x, y, z;
     sscanf(line, "%f %f %f", &x, &y, &z);
-    points[i].x = x;
-    points[i].y = y;
-    points[i].z = z;
+    points[i].pos.x = x;
+    points[i].pos.y = y;
+    points[i].pos.z = z;
   }
 
   *points_out = points;
@@ -129,65 +81,91 @@ int kmeans(Point *points, int points_counts, int clusters_count, int nb_t) {
   }
 
   Cluster *clusters = malloc(clusters_count * sizeof(Cluster));
-  int converged = 0;
+  Acc *local_acc_array = calloc(nb_t * clusters_count, sizeof(Acc));
+
+  int changed = 1;
+  iter = 0;
 
 #pragma omp parallel num_threads(nb_t)
   {
+    // Getting the local cluster
+    int tid = omp_get_thread_num();
 
-    // Assign the k first clusters
-#pragma omp for
-    for (int k = 0; k < clusters_count; k++) {
-      points[k].cluster = k;
-      clusters[k].center = points[k];
-      clusters[k].points_count = 0;
-      clusters[k].point_acc.x = 0;
-      clusters[k].point_acc.y = 0;
-      clusters[k].point_acc.z = 0;
-    }
-    // Implicit Barrier
+    Acc *acc = &local_acc_array[tid * clusters_count];
 
-    for (;;) {
-#pragma omp barrier
+    while (changed) {
 
-#pragma omp single
-      converged = 1;
-
-      // Implicit Barrier
+      for (int k = 0; k < clusters_count; k++) {
+        acc[k].x = acc[k].y = acc[k].z = 0;
+        acc[k].count = 0;
+      }
 
 #pragma omp for
       for (int i = 0; i < points_counts; i++) {
         Point p = points[i];
         // Finding the nearest cluster
         int nearest = 0;
-        Float min_dist = cluster_dist(clusters[0], p);
+        Float min_dist = Float_INFTY;
 
-        for (int k = 1; k < clusters_count; k++) {
-          Float dist = cluster_dist(clusters[k], p);
-          if (min_dist > dist) {
+        for (int k = 0; k < clusters_count; k++) {
+          Float dx = p.pos.x - clusters[k].pos.x;
+          Float dy = p.pos.y - clusters[k].pos.y;
+          Float dz = p.pos.z - clusters[k].pos.z;
+
+          Float dist = dx * dx + dy * dy + dz * dz;
+
+          if (dist < min_dist) {
             min_dist = dist;
             nearest = k;
           }
         }
-
-        cluster_add_point(&clusters[nearest], p);
         points[i].cluster = nearest;
+
+        acc[nearest].x += p.pos.x;
+        acc[nearest].y += p.pos.y;
+        acc[nearest].z += p.pos.z;
+        acc[nearest].count++;
       }
       // Implicit Barrier
 
-      // Computing barycenter
-#pragma omp for reduction(&& : converged)
-      for (int k = 0; k < clusters_count; k++)
-        converged = converged && !compute_barycenter(&clusters[k]);
-      // Implicit Barrier
+      // Reduction
+#pragma omp single
+      {
+        changed = 0;
 
-#pragma omp atomic
-      iter++;
-#pragma omp barrier
-      if (converged)
-        break;
+        for (int k = 0; k < clusters_count; k++) {
+          Float sx = 0, sy = 0, sz = 0;
+          int sc = 0;
+
+          for (int t = 0; t < nb_t; t++) {
+            Acc *a = &local_acc_array[t * clusters_count + k];
+            sx += a->x;
+            sy += a->y;
+            sz += a->z;
+            sc += a->count;
+          }
+
+          if (sc > 0) {
+            Vec3 new_center = {
+                sx / sc,
+                sy / sc,
+                sz / sc,
+            };
+
+            if (Float_abs(new_center.x - clusters[k].pos.x) > EPSILON ||
+                Float_abs(new_center.y - clusters[k].pos.y) > EPSILON ||
+                Float_abs(new_center.z - clusters[k].pos.z) > EPSILON)
+              changed = 1;
+
+            clusters[k].pos = new_center;
+          }
+        }
+        iter++;
+      }
+      // Implicit Barrier
     }
   }
-
+  free(local_acc_array);
   free(clusters);
   return 0;
 }
@@ -221,13 +199,15 @@ int main(int argc, char **argv) {
     fprintf(stderr, "failled to parse the file !\n");
     return 2;
   }
+  double begin = omp_get_wtime();
   kmeans(points, nb_points, cluster_count, nbT);
-  printf("iter :%d\n", iter);
+  double end = omp_get_wtime();
+  printf("{\"time\":%lf, \"iter\":%d}\n", end - begin, iter);
 
-#define REGISTER_RESULT
 #ifdef REGISTER_RESULT
   char result_filename[256] = {0};
-  snprintf(result_filename, 255, "result_%s_%s.json", argv[2], argv[3]);
+  snprintf(result_filename, 255, "results/result_%d_%s_%s.json", nb_points,
+           argv[2], argv[3]);
   FILE *result_register = fopen(result_filename, "w");
   if (!result_register) {
     fprintf(stderr, "Failed to open the %s !\n", result_filename);
@@ -238,8 +218,8 @@ int main(int argc, char **argv) {
 
   for (int i = 0; i < nb_points; i++)
     fprintf(result_register, "{\"cluster\":%d,\"x\":%f,\"y\":%f,\"z\":%f}%s\n",
-            points[i].cluster, points[i].x, points[i].y, points[i].z,
-            i < nb_points - 1 ? "," : "");
+            points[i].cluster, points[i].pos.x, points[i].pos.y,
+            points[i].pos.z, i < nb_points - 1 ? "," : "");
 
   fprintf(result_register, "]}");
 
